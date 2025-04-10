@@ -1,0 +1,25 @@
+{
+  "name": "claude-ts-mcps",
+  "type": "module",
+  "note": {
+    "reference": "https://modelcontextprotocol.io/quickstart/server"
+  },
+  "scripts": {
+    "figma": "bun run src/figma.ts",
+    "slack": "bun run src/slack.ts",
+    "notion": "bun run src/notion.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/diff": "^7.0.1",
+    "@types/node": "^22.13.10"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "@notionhq/client": "^2.3.0",
+    "diff": "^7.0.0",
+    "minimatch": "^10.0.1",
+    "puppeteer": "^22.3.0",
+    "zod": "^3.24.2"
+  }
+}
