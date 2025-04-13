@@ -7,7 +7,8 @@
   "scripts": {
     "figma": "bun run src/figma.ts",
     "slack": "bun run src/slack.ts",
-    "notion": "bun run src/notion.ts"
+    "notion": "bun run src/notion.ts",
+    "think": "bun run src/think.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",

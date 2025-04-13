@@ -16,6 +16,7 @@ This project implements several MCP servers that provide integration with variou
 - **Slack**: Slack API integration for messaging and channel information
 - **Firecrawl**: Web scraping capabilities
 - **Notion**: Notion API integration with markdown conversion for improved readability
+- **Think**: Structured reasoning space for complex problem solving (Claude Desktop only)
 
 ## Requirements
 
@@ -51,107 +52,20 @@ To use these MCP servers with your AI assistant, you need to configure them acco
     2. Navigate to "Features > MCP"
     3. Add your server configurations
 
-Here's a complete example of the server configuration:
+This repository includes configuration templates in the `config_templates` directory:
 
-```json
-{
-  "mcpServers": {
-    "brave-search": {
-      "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
-      "args": [
-        "run",
-        "C:\\Users\\<path>\\mcps-collection\\src\\brave-search.ts"
-      ],
-      "env": {
-        "BRAVE_API_KEY": "YOUR_BRAVE_API_KEY"
-      }
-    },
-    "filesystem": {
-      "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
-      "args": [
-        "run",
-        "C:\\Users\\<path>\\mcps-collection\\src\\filesystem.ts",
-        "C:\\Users\\<YOUR_USERNAME>"
-      ]
-    },
-    "git": {
-      "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
-      "args": [
-        "run",
-        "C:\\Users\\<path>\\mcps-collection\\src\\git.ts"
-      ]
-    },
-    "github": {
-      "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
-      "args": [
-        "run",
-        "C:\\Users\\<path>\\mcps-collection\\src\\github.ts"
-      ],
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_TOKEN"
-      }
-    },
-    "shell": {
-      "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
-      "args": [
-        "run",
-        "C:\\Users\\<path>\\mcps-collection\\src\\shell.ts"
-      ]
-    },
-    "figma": {
-      "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
-      "args": [
-        "run",
-        "C:\\Users\\<path>\\mcps-collection\\src\\figma.ts"
-      ],
-      "env": {
-        "FIGMA_ACCESS_TOKEN": "YOUR_FIGMA_TOKEN"
-      }
-    },
-    "slack": {
-      "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
-      "args": [
-        "run",
-        "C:\\Users\\<path>\\mcps-collection\\src\\slack.ts"
-      ],
-      "env": {
-        "SLACK_BOT_TOKEN": "YOUR_SLACK_BOT_TOKEN",
-        "SLACK_TEAM_ID": "YOUR_SLACK_TEAM_ID"
-      }
-    },
-    "firecrawl": {
-      "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
-      "args": [
-        "run",
-        "C:\\Users\\<path>\\mcps-collection\\src\\firecrawl.ts"
-      ],
-      "env": {
-        "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_API_KEY"
-      }
-    },
-    "notion": {
-      "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
-      "args": [
-        "run",
-        "C:\\Users\\<path>\\mcps-collection\\src\\notion.ts"
-      ],
-      "env": {
-        "NOTION_API_KEY": "YOUR_NOTION_API_KEY"
-      }
-    }
-  }
-}
-```
+- `claude_desktop_config_template.json`: Complete configuration for Claude Desktop
 
-**Note**: The example above uses Windows path format with backslashes (`\\`).
-For macOS or Linux, use forward slashes instead:
-```
-"command": "/Users/<YOUR_USERNAME>/.bun/bin/bun",
-"args": [
-  "run",
-  "/Users/<path>/mcps-collection/src/brave-search.ts"
-]
-```
+To use the templates:
+
+1. Copy the appropriate template from the `config_templates` directory
+2. Replace `<YOUR_USERNAME>` and `<path>` placeholders with your actual values
+3. Add your API keys and tokens where needed
+4. Import or paste the configuration into your AI assistant's settings
+
+**Note**: Windows paths use backslashes (`\\`), while macOS or Linux use forward slashes.
+
+**Important for Cursor users**: The Think tool is only compatible with Claude Desktop. If you are using Cursor, please remove the Think configuration from your `mcp.json` file to avoid errors.
 
 ### API Keys and Tokens Setup
 
@@ -209,6 +123,19 @@ Securely access the file system with:
 - **Shell**: Controlled shell command execution
 - **Figma**: Design file retrieval and operations
 - **Slack**: Message sending and channel information retrieval
+- **Firecrawl**: Web scraping
+- **Notion**: Notion API integration
+
+### Think Integration
+
+The Think integration provides:
+
+- Structured reasoning space for complex problem solving
+- Ability to break down problems into manageable steps
+- Support for methodical thinking and analysis without executing actions
+- Improved decision-making through guided thought processes
+
+**Note**: The Think tool is exclusively compatible with Claude Desktop and will not function in Cursor or other environments. Cursor users should not include this tool in their configuration.
 
 ## Development
 
@@ -223,6 +150,7 @@ Each MCP server is implemented as a standalone TypeScript file or directory in t
 - `src/slack.ts`: Slack API integration
 - `src/firecrawl.ts`: Web scraping
 - `src/notion.ts` & `src/notion/`: Notion API integration
+- `src/think.ts`: Structured reasoning space for complex problem solving
 
 To add new functionality:
 

@@ -82,6 +82,13 @@
         "env": {
           "NOTION_API_KEY": "YOUR_NOTION_API_KEY"
         }
+      },
+      "think": {
+        "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
+        "args": [
+          "run",
+          "C:\\Users\\<path>\\mcps-collection\\src\\think.ts"
+        ]
       }
     }
   }
