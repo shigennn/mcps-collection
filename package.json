@@ -15,7 +15,7 @@
     "@types/node": "^22.13.10"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.7.0",
+    "@modelcontextprotocol/sdk": "^1.9.0",
     "@notionhq/client": "^2.3.0",
     "diff": "^7.0.0",
     "minimatch": "^10.0.1",

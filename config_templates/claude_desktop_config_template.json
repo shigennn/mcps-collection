@@ -1,0 +1,87 @@
+{
+    "mcpServers": {
+      "brave-search": {
+        "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
+        "args": [
+          "run",
+          "C:\\Users\\<path>\\mcps-collection\\src\\brave-search.ts"
+        ],
+        "env": {
+          "BRAVE_API_KEY": "YOUR_BRAVE_API_KEY"
+        }
+      },
+      "filesystem": {
+        "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
+        "args": [
+          "run",
+          "C:\\Users\\<path>\\mcps-collection\\src\\filesystem.ts",
+          "C:\\Users\\<YOUR_USERNAME>"
+        ]
+      },
+      "git": {
+        "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
+        "args": [
+          "run",
+          "C:\\Users\\<path>\\mcps-collection\\src\\git.ts"
+        ]
+      },
+      "github": {
+        "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
+        "args": [
+          "run",
+          "C:\\Users\\<path>\\mcps-collection\\src\\github.ts"
+        ],
+        "env": {
+          "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_TOKEN"
+        }
+      },
+      "shell": {
+        "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
+        "args": [
+          "run",
+          "C:\\Users\\<path>\\mcps-collection\\src\\shell.ts"
+        ]
+      },
+      "figma": {
+        "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
+        "args": [
+          "run",
+          "C:\\Users\\<path>\\mcps-collection\\src\\figma.ts"
+        ],
+        "env": {
+          "FIGMA_ACCESS_TOKEN": "YOUR_FIGMA_TOKEN"
+        }
+      },
+      "slack": {
+        "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
+        "args": [
+          "run",
+          "C:\\Users\\<path>\\mcps-collection\\src\\slack.ts"
+        ],
+        "env": {
+          "SLACK_BOT_TOKEN": "YOUR_SLACK_BOT_TOKEN",
+          "SLACK_TEAM_ID": "YOUR_SLACK_TEAM_ID"
+        }
+      },
+      "firecrawl": {
+        "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
+        "args": [
+          "run",
+          "C:\\Users\\<path>\\mcps-collection\\src\\firecrawl.ts"
+        ],
+        "env": {
+          "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_API_KEY"
+        }
+      },
+      "notion": {
+        "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
+        "args": [
+          "run",
+          "C:\\Users\\<path>\\mcps-collection\\src\\notion.ts"
+        ],
+        "env": {
+          "NOTION_API_KEY": "YOUR_NOTION_API_KEY"
+        }
+      }
+    }
+  }
