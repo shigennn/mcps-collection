@@ -1,4 +1,4 @@
-# MCPs Collection
+# MCP Server Collection
 
 A collection of Model Context Protocol (MCP) servers designed to integrate various services and APIs with AI assistants.
 This project provides a comprehensive hub of MCP servers that can enhance AI assistants like Claude Desktop, Cursor, GitHub Copilot, and others through the Model Context Protocol.
@@ -28,8 +28,8 @@ This project implements several MCP servers that provide integration with variou
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/mcps-collection.git
-   cd mcps-collection
+   git clone https://github.com/shigennn/mcp-server-collection.git
+   cd mcp-server-collection
    ```
 
 2. Install dependencies:

@@ -4,7 +4,7 @@
         "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
         "args": [
           "run",
-          "C:\\Users\\<path>\\mcps-collection\\src\\brave-search.ts"
+          "C:\\Users\\<path>\\mcp-server-collection\\src\\brave-search.ts"
         ],
         "env": {
           "BRAVE_API_KEY": "YOUR_BRAVE_API_KEY"
@@ -14,7 +14,7 @@
         "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
         "args": [
           "run",
-          "C:\\Users\\<path>\\mcps-collection\\src\\filesystem.ts",
+          "C:\\Users\\<path>\\mcp-server-collection\\src\\filesystem.ts",
           "C:\\Users\\<YOUR_USERNAME>"
         ]
       },
@@ -22,14 +22,14 @@
         "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
         "args": [
           "run",
-          "C:\\Users\\<path>\\mcps-collection\\src\\git.ts"
+          "C:\\Users\\<path>\\mcp-server-collection\\src\\git.ts"
         ]
       },
       "github": {
         "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
         "args": [
           "run",
-          "C:\\Users\\<path>\\mcps-collection\\src\\github.ts"
+          "C:\\Users\\<path>\\mcp-server-collection\\src\\github.ts"
         ],
         "env": {
           "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_TOKEN"
@@ -39,14 +39,14 @@
         "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
         "args": [
           "run",
-          "C:\\Users\\<path>\\mcps-collection\\src\\shell.ts"
+          "C:\\Users\\<path>\\mcp-server-collection\\src\\shell.ts"
         ]
       },
       "figma": {
         "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
         "args": [
           "run",
-          "C:\\Users\\<path>\\mcps-collection\\src\\figma.ts"
+          "C:\\Users\\<path>\\mcp-server-collection\\src\\figma.ts"
         ],
         "env": {
           "FIGMA_ACCESS_TOKEN": "YOUR_FIGMA_TOKEN"
@@ -56,7 +56,7 @@
         "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
         "args": [
           "run",
-          "C:\\Users\\<path>\\mcps-collection\\src\\slack.ts"
+          "C:\\Users\\<path>\\mcp-server-collection\\src\\slack.ts"
         ],
         "env": {
           "SLACK_BOT_TOKEN": "YOUR_SLACK_BOT_TOKEN",
@@ -67,7 +67,7 @@
         "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
         "args": [
           "run",
-          "C:\\Users\\<path>\\mcps-collection\\src\\firecrawl.ts"
+          "C:\\Users\\<path>\\mcp-server-collection\\src\\firecrawl.ts"
         ],
         "env": {
           "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_API_KEY"
@@ -77,7 +77,7 @@
         "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
         "args": [
           "run",
-          "C:\\Users\\<path>\\mcps-collection\\src\\notion.ts"
+          "C:\\Users\\<path>\\mcp-server-collection\\src\\notion.ts"
         ],
         "env": {
           "NOTION_API_KEY": "YOUR_NOTION_API_KEY"
@@ -87,7 +87,7 @@
         "command": "C:\\Users\\<YOUR_USERNAME>\\.bun\\bin\\bun.exe",
         "args": [
           "run",
-          "C:\\Users\\<path>\\mcps-collection\\src\\think.ts"
+          "C:\\Users\\<path>\\mcp-server-collection\\src\\think.ts"
         ]
       }
     }
